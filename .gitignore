@@ -1,0 +1,7 @@
+.idea/*
+node_modules
+logs/
+config/index.js
+npm-debug*
+uploads/
+sftp-config.json

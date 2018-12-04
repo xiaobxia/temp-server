@@ -1,0 +1,19 @@
+{
+  "name": "temp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --inspect --debug-port=9220 ./app.js",
+    "prod": "pm2 start ./app.js --name=temp-server",
+    "delete": "pm2 delete temp-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7",
+    "pm2": "^3.2.2"
+  }
+}
