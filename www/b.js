@@ -24,6 +24,7 @@ function initDom(uuidNumber) {
 
 function activeLastPointToolip(chart) {
   var points = chart.series[0].points;
+  console.log(points.length)
   chart.tooltip.refresh(points[points.length - 1]);
 }
 
@@ -57,7 +58,7 @@ function queryData(chart, series, uuidNumber, index) {
     var usage = result.usage;
     var x = (new Date()).getTime()
     var y = usage
-    series.addPoint([x, y], true, false);
+    series.addPoint([x, y], true, true);
     activeLastPointToolip(chart);
   }, 100)
 }
